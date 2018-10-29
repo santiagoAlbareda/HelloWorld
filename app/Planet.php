@@ -6,6 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Planet extends Model
 {
-  protected $fillable = ['title', 'size'];
+  protected $fillable = ['name', 'size', 'color'];
     //
 }

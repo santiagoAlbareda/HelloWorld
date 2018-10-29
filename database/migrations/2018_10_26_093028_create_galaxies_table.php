@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePlanetsTable extends Migration
+class CreateGalaxiesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,9 @@ class CreatePlanetsTable extends Migration
      */
     public function up()
     {
-        Schema::create('planets', function (Blueprint $table) {
+        Schema::create('galaxies', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->integer('size');
-            $table->string('color');
             $table->timestamps();
         });
     }
@@ -29,6 +27,6 @@ class CreatePlanetsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('planets');
+        Schema::dropIfExists('galaxies');
     }
 }

@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Planet;
+use App\Galaxy;
 
-class PlanetsTableSeeder extends Seeder
+class GalaxiesTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,12 +14,10 @@ class PlanetsTableSeeder extends Seeder
     {
       $faker = \Faker\Factory::create();
 
-      // Create 50 product records
+      // Create 10 product records
       for ($i = 0; $i < 10; $i++) {
-          Planet::create([
+          Galaxy::create([
               'name' => $faker->domainWord,
-              'size' => $faker->randomNumber(2),
-              'color' => $faker->hexcolor
           ]);
       }
       //
